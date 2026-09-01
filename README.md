@@ -1,69 +1,65 @@
 # RimScent Extended: Everyday Life Expansion
 
-La cuisine, le café, le pain, les fleurs, les livres et les bibelots. Les odeurs d'une pièce
-où des gens vivent vraiment. RimWorld 1.6.
+Cooking, coffee, bread, flowers, books and knick-knacks. The smells of a room people actually
+live in. For RimWorld 1.6.
 
-## La cuisine, sans nommer un seul fourneau
+## Cooking, without naming a single stove
 
-Tous les postes de cuisson du jeu et de tous les mods sentent la cuisine — atteints par le
-marqueur **`isMealSource`** que le jeu utilise déjà, pas par une liste écrite à la main. Un
-fourneau hors tension ne sent rien. Le distributeur de pâte nutritive a droit à son odeur
-propre, nettement moins appétissante.
+Every cooking station in the game and in every mod smells of cooking — reached through the
+**`isMealSource`** marker the game already uses, not through a hand-written list. An unpowered
+stove smells of nothing. The nutrient paste dispenser gets a scent of its own, markedly less
+appetising.
 
-## Les fleurs, de la même façon
+## Flowers, the same way
 
-Toute plante décorative, vanilla ou moddée, par son marqueur **`purpose="Beauty"`**. Un seul
-xpath couvre 62 plantes sur les mods installés, et couvrira la prochaine que tu installeras
-sans mise à jour.
+Every decorative plant, vanilla or modded, through its **`purpose="Beauty"`** marker. A single
+xpath covers 62 plants across the installed mods, and will cover the next one you install
+without an update.
 
-C'est le principe de ce mod : **patcher par un critère que le jeu utilise déjà**, plutôt que
-d'énumérer. Une liste énumérée est fausse le jour où tu ajoutes un mod ; un critère ne l'est
-jamais.
+That is this mod's whole principle: **patch on a criterion the game already uses**, rather than
+enumerate. An enumerated list is wrong the day you add a mod; a criterion never is.
 
-## Objets vanilla
+## Vanilla items
 
-Bière et moût — c'est de la fermentation, comme le fût et la brasserie. Foin, houblon et
-herbes médicinales : du végétal coupé et séché. Les documents éparpillés sentent le papier,
-pas la crasse — c'est pour ça qu'ils sont ici et pas dans le volet industrie.
+Beer and wort — fermentation, like the cask and the brewery. Hay, hops and healroot: cut and
+dried plant matter. Scattered documents smell of paper, not grime — which is why they are here
+and not in the industry expansion.
 
-`RimScentExtended_Scent_Fermenting` (partagée avec Industry) et
-`RimScentExtended_Scent_WornScent` (partagée avec Perfume Plus) sont **déclarées dans le
-socle**.
+`RimScentExtended_Scent_Fermenting` (shared with Industry) and
+`RimScentExtended_Scent_WornScent` (shared with Perfume Plus) are **declared in the socle**.
 
-## Mods tiers
+## Third-party mods
 
-| Mod | Ce qui sent |
+| Mod | What smells |
 |---|---|
-| **VBE Coffees and Teas** | café et thé, torréfaction et infusion |
-| **Vanilla Cooking Expanded - Bakery** | le pain qui cuit |
-| **Stoneborn Cuisine** | gril, four nain, marmite portative, micro-générateur quantique, séchoir à viande, âtre au suif |
-| **Alpha Crafts** | bougies parfumées, savon, essences, vinaigre, parfum porté |
-| **Knick Knacks**, **Colonists' Deco**, **Tabletop Trove** | désodorisants, plantes d'intérieur, vieux papier, têtes empaillées |
+| **VBE Coffees and Teas** | coffee and tea, roasting and brewing |
+| **Vanilla Cooking Expanded - Bakery** | bread in the oven |
+| **Stoneborn Cuisine** | grill, dwarven oven, portable cauldron, quantum microgenerator, meat drier, tallow hearth |
+| **Alpha Crafts** | scented candles, soap, essences, vinegar, worn perfume |
+| **Knick Knacks**, **Colonists' Deco**, **Tabletop Trove** | air fresheners, houseplants, old paper, mounted heads |
 
-L'âtre au suif de Stoneborn sent **le repas et non le combustible** : c'est un poste de
-cuisson (`DV_DoBillsCookTallowHearth`), et ce qui domine dans une cuisine, c'est ce qu'on y
-fait cuire.
+Stoneborn's tallow hearth smells of **the meal and not the fuel**: it is a cooking station
+(`DV_DoBillsCookTallowHearth`), and what dominates a kitchen is what is being cooked in it.
 
-Les essences d'Alpha Crafts prennent le nom de leur ingrédient à l'exécution
-(`AlphaCrafts.CompProperties_LabelByIngredients`) : l'odeur est donc volontairement
-générique, faute de pouvoir la spécialiser par def.
+Alpha Crafts essences take the name of their ingredient at runtime
+(`AlphaCrafts.CompProperties_LabelByIngredients`), so their scent is deliberately generic —
+there is no way to specialise it per def.
 
-Le séchoir à viande n'a aucune alimentation et sentira en permanence : correct pour ce qu'il
-est.
+The meat drier has no power connection and will smell permanently: correct, for what it is.
 
-## Ordre de chargement
+## Load order
 
-Les opérations de patch s'appliquent dans l'ordre des mods : `About.xml` déclare en
-`loadAfter` **tous** les mods que ce mod patche, pas seulement la famille RimScent.
+Patch operations apply in mod order: `About.xml` declares in `loadAfter` **every** mod this one
+patches, not just the RimScent family.
 
-## Dépendances
+## Requirements
 
 - [RimScent](https://steamcommunity.com/sharedfiles/filedetails/?id=3645569466)
-- RimScent Extended (le socle)
+- RimScent Extended (the socle)
 
-Aucun des sept mods tiers n'est requis : chaque volet ne se charge que si son mod est actif,
-via `LoadFolders.xml`. Rien n'est écrit dans la sauvegarde.
+None of the seven third-party mods is required: each section loads only if its mod is active,
+through `LoadFolders.xml`. Nothing is written to the save.
 
 ## Licence
 
-MIT — voir [LICENSE](LICENSE) et [ATTRIBUTION.md](ATTRIBUTION.md).
+MIT — see [LICENSE](LICENSE) and [ATTRIBUTION.md](ATTRIBUTION.md).

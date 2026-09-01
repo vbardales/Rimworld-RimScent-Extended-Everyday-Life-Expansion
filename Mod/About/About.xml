@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RimScent Extended: Everyday Life Expansion</name>
+	<author>nelim</author>
+	<packageId>nelim.rimscent.extended.everydaylife</packageId>
+	<description>Cooking, coffee, bread, brewing, flowers, books and knick-knacks. The smells of a room people actually live in.
+
+COOKING, WITHOUT NAMING A SINGLE STOVE
+Every cooking station in the game and in every mod smells of cooking — reached through the isMealSource marker the game already uses, not a hand-written list. An unpowered stove smells of nothing. The nutrient paste dispenser gets its own, considerably less appetising smell.
+
+FLOWERS, THE SAME WAY
+Every decorative plant, vanilla or modded, through its purpose="Beauty" marker. One xpath covers 62 plants across the installed mods, and will cover the next one you install without an update.
+
+VANILLA ITEMS
+Beer and wort — that is fermentation, like the barrel and the brewery. Hay, hops and herbal medicine: cut plants drying in the air. Scattered documents smell of paper, not of dirt.
+
+MOD INTEGRATION — each part loads only if the mod it targets is active
+- VBE Coffees and Teas: coffee and tea, roasting and brewing.
+- Vanilla Cooking Expanded - Bakery: baking bread.
+- Stoneborn Cuisine: the grill, the dwarven oven, the portable pot and the quantum microgenerator all smell of cooking; the meat dryer of drying meat; the tallow hearth of the meal rather than the fuel, because it is a cooking station.
+- Alpha Crafts: scented candles, soap, essences, vinegar, worn perfume. Its essences take the name of their ingredient at runtime, so the smell is deliberately generic.
+- Knick Knacks, Colonists' Deco, Tabletop Trove: air fresheners, houseplants, old paper on shelves and in books, taxidermy heads. Props that sat there decoratively now do something.
+
+Ships in English with a French translation injected on top. No save data.
+
+Requires RimScent and RimScent Extended.</description>
+	<modVersion>0.1.0</modVersion>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>reo.RimScent</packageId>
+			<displayName>RimScent</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3645569466</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>nelim.rimscent.extended</packageId>
+			<displayName>RimScent Extended</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>reo.RimScent</li>
+		<!-- Le socle declare RimScentExtended_Scent_Fermenting et _WornScent, partagees
+		     avec d'autres extensions : il faut passer apres lui. -->
+		<li>nelim.rimscent.extended</li>
+		<!-- Les operations de patch s'appliquent dans l'ordre de chargement : il faut
+		     passer apres les mods vises, sinon les xpath ciblent des defs absents. -->
+		<li>vanillaexpanded.vbrewecandt</li>
+		<li>vanillaexpanded.vcookebakery</li>
+		<li>det.sbcuisine</li>
+		<li>vaguelysexual.modpackageid.goeshere</li>
+		<li>mlie.colonistsdeco</li>
+		<li>soulfulpumpkin.tabletoptroveunofficial</li>
+		<li>sarg.alphacrafts</li>
+	</loadAfter>
+</ModMetaData>

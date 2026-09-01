@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<!-- Racine : About, la cuisine, les fleurs et les objets vanilla. -->
+		<li>/</li>
+		<!-- Une cle DefInjected qui vise un def absent est une erreur de chargement,
+		     d'ou le decoupage par IfModActive plutot qu'un dossier unique. -->
+		<li IfModActive="vanillaexpanded.vbrewecandt">VBECoffee</li>
+		<li IfModActive="vanillaexpanded.vcookebakery">VCEBakery</li>
+		<li IfModActive="det.sbcuisine">StonebornCuisine</li>
+		<li IfModActive="vaguelysexual.modpackageid.goeshere">KnickKnacks</li>
+		<li IfModActive="mlie.colonistsdeco">ColonistsDeco</li>
+		<li IfModActive="soulfulpumpkin.tabletoptroveunofficial">TabletopTrove</li>
+		<li IfModActive="sarg.alphacrafts">AlphaCrafts</li>
+	</v1.6>
+</loadFolders>

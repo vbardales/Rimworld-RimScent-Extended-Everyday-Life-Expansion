@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Une salete vanilla qui ne sent pas la crasse mais le papier : elle vit donc ici,
+       avec les bibelots et les livres, et non dans le volet industrie. -->
+
+  <!-- Documents eparpilles : notre odeur de vieux papier, partagee avec les volets bibelots. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="Filth_ScatteredDocuments") and modExtensions]/modExtensions</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="Filth_ScatteredDocuments") and modExtensions]/modExtensions</xpath>
+      <value>
+        <li Class="RimScentReworked.ModExtension_Scent">
+          <thought>RimScentExtended_Scent_OldPaper</thought>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="Filth_ScatteredDocuments") and not(modExtensions)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="Filth_ScatteredDocuments") and not(modExtensions)]</xpath>
+      <value>
+        <modExtensions>
+          <li Class="RimScentReworked.ModExtension_Scent">
+            <thought>RimScentExtended_Scent_OldPaper</thought>
+          </li>
+        </modExtensions>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

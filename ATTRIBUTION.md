@@ -2,18 +2,18 @@
 
 ## RimScent
 
-par **reo / ocarina0001** — MIT.
+by **reo / ocarina0001** — MIT.
 [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3645569466)
 
-Mod compagnon, pas un fork. Aucun fichier de RimScent n'est copié ni redistribué. Il est
-déclaré en dépendance dure et on utilise `RimScentReworked.ModExtension_Scent`, son propre
-point d'extension public. Sa `RimScent_FloweryScent` est réutilisée par `defName` là où elle
-convient, plutôt que d'en créer une de plus.
+A companion mod, not a fork. No file from RimScent is copied or redistributed. It is declared
+as a hard dependency, and we use `RimScentReworked.ModExtension_Scent`, its own public extension
+point. Its `RimScent_FloweryScent` is reused by `defName` where it fits, rather than adding one
+more.
 
-## Mods lus par cette extension
+## Mods read by this expansion
 
-Rien n'en est copié. Chacun est visé uniquement par des `PatchOperation`, dans un dossier
-qui ne se charge que si le mod est actif :
+Nothing is copied from them. Each is targeted only by `PatchOperation`s, in a folder that loads
+only if the mod is active:
 
 - **VBE Coffees and Teas** (`vanillaexpanded.vbrewecandt`)
 - **Vanilla Cooking Expanded - Bakery** (`vanillaexpanded.vcookebakery`)
@@ -23,11 +23,10 @@ qui ne se charge que si le mod est actif :
 - **Colonists' Deco** (`mlie.colonistsdeco`)
 - **Tabletop Trove** (`soulfulpumpkin.tabletoptroveunofficial`)
 
-Les patchs cuisine et fleurs ne visent aucun mod nommément : ils passent par
-`isMealSource` et `purpose="Beauty"`, deux marqueurs du jeu de base. Ils couvrent donc des
-mods qui ne sont pas dans cette liste, y compris ceux qui n'existent pas encore, sans que
-rien n'en soit lu ni copié.
+The cooking and flower patches name no mod: they go through `isMealSource` and
+`purpose="Beauty"`, two base-game markers. They therefore cover mods that are not in this list,
+including ones that do not exist yet, without anything being read from or copied out of them.
 
-## Ce mod
+## This mod
 
-MIT, © nelim. Defs, patchs et traductions sont un travail original.
+MIT, © nelim. Defs, patches and translations are original work.

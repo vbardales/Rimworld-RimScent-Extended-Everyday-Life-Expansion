@@ -1,5 +1,5 @@
 ---
-stage:              dansMonoRepo
+stage:              horsMonoRepo
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -19,7 +19,6 @@ remaining:
   - unverified: no in-game run has verified loading, scent effects, English/French display, or the absence of an empty settings page and MainButtons shortcut
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: no automated, XML contract, functional, or Pickle test suite exists yet
-  - pending: the autonomous repository has not received its first commit or push
 updated:            2026-09-22, audit of on-disk artifacts
 ---
 
@@ -47,7 +46,8 @@ Checked the on-disk checkout rather than relying on the previous automatic sweep
 Initialized a nested, autonomous Git repository on `main`, without a subtree, using the
 audited checkout state. Its `origin` is
 `https://github.com/vbardales/Rimworld-RimScent-Extended-Everyday-Life-Expansion.git`.
-The first commit and push are still pending.
+The initial history has been reconciled with the existing remote `main` through a rebase;
+the next push is a fast-forward.
 
 ### Dependencies and content contracts
 

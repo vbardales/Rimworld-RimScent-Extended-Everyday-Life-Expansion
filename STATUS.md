@@ -1,5 +1,5 @@
 ---
-stage:              horsMonoRepo
+stage:              preOptions
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -48,6 +48,22 @@ audited checkout state. Its `origin` is
 `https://github.com/vbardales/Rimworld-RimScent-Extended-Everyday-Life-Expansion.git`.
 The initial history has been reconciled with the existing remote `main` through a rebase;
 the next push is a fast-forward.
+
+### Visual and description gates — 2026-09-22
+
+- **`ModIcon generated` passed.** Opened `Mod/About/ModIcon.png` directly: it is a
+  legible 128 x 128 PNG (30,229 bytes) showing the RimScent mascot in the everyday-life
+  interior context.
+- **`Preview generated` passed.** Opened `Mod/About/Preview.png` directly: it is a
+  896 x 504 PNG (620,714 bytes). The delivered image has a readable title and summary
+  at workshop scale, a warm amber accent line, and a dark brown overlay that remains
+  distinct from the accent. The clean artwork source remains at `Art/Preview-source.png`.
+- **`preOptions` passed.** The English `About.xml` description describes the shipped
+  content, the public name consistently presents `Extended` as a visual suffix, and the
+  final GitHub source link targets the configured autonomous repository.
+
+The next gate is the settings audit. Its static no-settings rationale is recorded below,
+but it remains partial until the required in-game absence checks have been observed.
 
 ### Dependencies and content contracts
 

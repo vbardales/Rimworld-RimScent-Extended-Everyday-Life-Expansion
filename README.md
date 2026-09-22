@@ -63,3 +63,7 @@ through `LoadFolders.xml`. Nothing is written to the save.
 ## Licence
 
 MIT — see [LICENSE](LICENSE) and [ATTRIBUTION.md](ATTRIBUTION.md).
+
+## Source
+
+https://github.com/vbardales/Rimworld-RimScent-Extended-Everyday-Life-Expansion

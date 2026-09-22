@@ -29,4 +29,4 @@ including ones that do not exist yet, without anything being read from or copied
 
 ## This mod
 
-MIT, © nelim. Defs, patches and translations are original work.
+MIT, © Nelim. Defs, patches and translations are original work.

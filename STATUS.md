@@ -18,8 +18,9 @@ workshop:
 remaining:
   - unverified: no in-game run has verified loading, scent effects, English/French display, or the absence of an empty settings page and MainButtons shortcut
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
-  - unverified: no automated, XML contract, functional, or Pickle test suite exists yet
-updated:            2026-09-22, audit of on-disk artifacts
+  - unverified: the minimal Pickle pass and manual no-settings observation have not run in game
+  - unverified: optional integration passes have not been written or run
+updated:            2026-09-26, protocol read and test-suite reconciliation
 ---
 
 # RimScent Extended: Everyday Life Expansion — status
@@ -100,6 +101,11 @@ unverified in game.
 
 ### Test status
 
-No `Tests/`, `TEST_SCENARIOS.md`, XML contract runner, automated tests, or Pickle features
-are present. No RimWorld or Pickle run was started by this audit. Static success above must
-not be read as proof that the patches load or that any scent is applied in game.
+`Tests/Check-Mod.ps1` now parses the 25 shipped XML files, checks the 15 French-covered scent
+ThoughtDefs, and rejects any shipped assembly or settings/MainButtons implementation. It passed
+on 2026-09-22. `Tests/Pickle/` now contains the development-only minimal companion,
+`01-minimal-load.feature`, and a `wsl-deps.sans-facultatifs.map` that stages RimScent and the
+local RimScent Extended engine.
+
+No Pickle run or manual UI observation has completed. Static success must not be read as proof
+that the patches load, that a scent is applied, or that no settings route appears in game.

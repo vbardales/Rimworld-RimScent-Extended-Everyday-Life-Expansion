@@ -1,5 +1,5 @@
 ---
-stage:              preOptions
+stage:              preTest
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -9,18 +9,19 @@ licence:            open
 licence_at:         the same MIT base as RimScent Extended
 dependencies:       declared
 showcase:            complete
-settings_audit:      partial
+settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
 translation_fr:      complete
 tested_on:
 workshop:
 remaining:
-  - unverified: no in-game run has verified loading, scent effects, English/French display, or the absence of an empty settings page and MainButtons shortcut
+  - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
-  - unverified: the minimal Pickle pass and manual no-settings observation have not run in game
+  - unverified: the minimal Pickle pass has not run in game
   - unverified: optional integration passes have not been written or run
-updated:            2026-09-26, protocol read and test-suite reconciliation
+  - pending: no `Mod/About/PublishedFileId.txt` is present; prepublication cannot be claimed until the actual Workshop ID is recorded
+updated:            2026-09-26, AUDIT.md revalidation and preTest entry
 ---
 
 # RimScent Extended: Everyday Life Expansion — status
@@ -82,10 +83,9 @@ There are no C# assemblies or source files and no `ModSettings`, settings-window
 and conditional patches, with no player-configurable behavior identified. A settings page
 would therefore be empty and unwarranted.
 
-This is a sound static `not_applicable` rationale, but the audit remains **partial**:
-without an in-game run, the required observation that Mod options has no empty page and
-that no visible or greyed MainButtons shortcut is registered has not been made. No defect
-is asserted.
+`AUDIT.md` now explicitly permits the source/definition inspection for this transition. The
+absence of a Mod class, settings page, and MainButtons definition justifies
+**`settings_audit: not_applicable`**. No defect is asserted.
 
 ### Translation audit
 
@@ -109,3 +109,10 @@ local RimScent Extended engine.
 
 No Pickle run or manual UI observation has completed. Static success must not be read as proof
 that the patches load, that a scent is applied, or that no settings route appears in game.
+
+### Stage update — 2026-09-26
+
+The static no-settings result, English/French localization coverage, and declared dependency
+contracts establish `preTest`. The test suite is not yet sufficient for `done`: each optional
+integration needs an explicitly scoped scenario/pass, the existing minimal pass must run, and
+all resulting runtime evidence remains to be reviewed.

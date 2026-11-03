@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Planned initial standalone repository release for RimWorld 1.6.
+- Initial standalone repository release planned for RimWorld 1.6.
 - Adds scent definitions and conditional integrations for everyday cooking, flowers,
   household items, coffee, baking, Stoneborn Cuisine, Alpha Crafts, Knick Knacks,
   Colonists' Deco, and Tabletop Trove.

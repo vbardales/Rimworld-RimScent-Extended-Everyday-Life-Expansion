@@ -22,3 +22,11 @@ Record the durable result in `docs/runs/YYYY-MM-DD-<sha>-<pass>.md`: launcher re
 SHA, pass/language, `exitReason`, discovered/played counts, reviewed capture names, and cleanup.
 `STATUS.md` may cite that short text record, never an ignored evidence path that is later deleted.
 
+
+## Offline contract check
+
+No unit-test project exists: this mod is declarative (no C#, no assembly). `Tests/Check-Mod.ps1`
+is the automated harness: it asserts exactly 15 scent `ThoughtDef`s, no shipped assembly or C#
+source, and no settings or MainButtons implementation. Run it from the mod root:
+`powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Check-Mod.ps1` (one PASS line, exit 0).
+XML parse and French coverage are covered by the shared `Check-ModBasics` and `Check-Translations`.

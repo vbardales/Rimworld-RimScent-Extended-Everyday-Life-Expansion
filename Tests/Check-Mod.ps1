@@ -1,27 +1,21 @@
 $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
-$xmlFiles = Get-ChildItem (Join-Path $root 'Mod') -Recurse -Filter '*.xml'
-foreach ($file in $xmlFiles) { [xml](Get-Content -Raw $file.FullName) | Out-Null }
+$mod = Join-Path $root 'Mod'
 
-$defs = Select-Xml -Path (Get-ChildItem (Join-Path $root 'Mod') -Recurse -Filter 'Scents_*.xml' |
+$defs = Select-Xml -Path (Get-ChildItem $mod -Recurse -Filter 'Scents_*.xml' |
     Where-Object { $_.FullName -notmatch '\\Languages\\' } |
     Select-Object -ExpandProperty FullName) -XPath '//ThoughtDef[defName]' |
     ForEach-Object { $_.Node.defName }
 if ($defs.Count -ne 15) { throw "Expected 15 scent ThoughtDefs, found $($defs.Count)." }
 
-$french = (Get-ChildItem (Join-Path $root 'Mod') -Recurse -Filter 'Scents_*.xml' |
-    Where-Object { $_.FullName -match '\\Languages\\French\\' } |
-    ForEach-Object { Get-Content -Raw $_.FullName }) -join "`n"
-$missing = @($defs | Where-Object { $french -notmatch [regex]::Escape($_ + '.stages.') })
-if ($missing.Count) { throw "Missing French DefInjected coverage: $($missing -join ', ')." }
-
-if (Get-ChildItem (Join-Path $root 'Mod') -Recurse -Include '*.cs','*.dll' -File) {
+if (Get-ChildItem $mod -Recurse -Include '*.cs','*.dll' -File) {
     throw 'This declarative mod must not ship an assembly or C# source.'
 }
-if (rg -n -i 'MainButton|ModSettings|DoSettingsWindowContents|GetSettings' (Join-Path $root 'Mod')) {
+$settings = Get-ChildItem $mod -Recurse -Include '*.xml' -File |
+    Select-String -Pattern 'MainButton|ModSettings|DoSettingsWindowContents|GetSettings'
+if ($settings) {
     throw 'A settings or MainButtons implementation was found; redo the settings audit.'
 }
 
-Write-Output "PASS: $($xmlFiles.Count) XML files, 15 French-covered scent ThoughtDefs, no settings implementation."
-
+Write-Output 'PASS: 15 scent ThoughtDefs, no assembly, no settings or MainButtons implementation.'

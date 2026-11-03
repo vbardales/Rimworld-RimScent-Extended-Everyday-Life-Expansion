@@ -22,7 +22,6 @@ remaining:
   - unverified: the minimal Pickle pass has not run in game
   - unverified: optional integration passes have not been written or run
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
-  - open: 7.b no written reason or named harness for the missing unit-test project (Tests/Check-Mod.ps1 is not described in TESTING.md)
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
   - open: 7.g translation_fr unchecked; FRENCH_REVIEW.md generated 2026-11-03, Virginie review pending
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
@@ -107,9 +106,9 @@ unverified in game.
 
 ### Test status
 
-`Tests/Check-Mod.ps1` now parses the 25 shipped XML files, checks the 15 French-covered scent
+`Tests/Check-Mod.ps1` (cut 2026-11-03, see TESTING.md) checks the 15 scent
 ThoughtDefs, and rejects any shipped assembly or settings/MainButtons implementation. It passed
-on 2026-09-22. `Tests/Pickle/` now contains the development-only minimal companion,
+on 2026-09-22 and again, green after the cut, on 2026-11-03. `Tests/Pickle/` now contains the development-only minimal companion,
 `01-minimal-load.feature`, and a `wsl-deps.sans-facultatifs.map` that stages RimScent and the
 local RimScent Extended engine.
 

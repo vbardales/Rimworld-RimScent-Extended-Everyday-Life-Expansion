@@ -21,7 +21,6 @@ remaining:
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game
   - unverified: optional integration scenarios written 2026-11-03 (02 and 03 features), none run
-  - open: 7.d wsl-deps.avec-facultatifs.map lacks four Workshop IDs (VBE Coffees and Teas, VCE Bakery, Knick Knacks, Colonists Deco), asked of Virginie
   - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written

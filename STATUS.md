@@ -13,7 +13,7 @@ showcase:            complete
 settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
-translation_fr: unchecked
+translation_fr:      complete
 tested_on:
 workshop:
 remaining:
@@ -23,9 +23,8 @@ remaining:
   - unverified: optional integration passes have not been written or run
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
-  - open: 7.g translation_fr unchecked; ChatGPT review applied 2026-11-03 (Vinegar, DriedHerbs, Tea, Soap, Houseplant descriptions; Baking description, Curing label; three rounds), FRENCH_REVIEW.md regenerated, Virginie review of the French pending
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
-updated:            2026-11-03, audit replay at writeTests
+updated:            2026-11-03, French review validated by Virginie
 protocols_read_sha: 2e5ab7ac86307bf3c840414a7d487c6a48c60ec1
 ---
 
@@ -121,3 +120,11 @@ The static no-settings result, English/French localization coverage, and declare
 contracts establish `preTest`. The test suite is not yet sufficient for `done`: each optional
 integration needs an explicitly scoped scenario/pass, the existing minimal pass must run, and
 all resulting runtime evidence remains to be reviewed.
+
+### French review by Virginie, 2026-11-03
+
+Reviewer: Virginie, 2026-11-03, at revision e21cc9f (before this record). She validated the French
+after four ChatGPT review rounds, whose corrections were applied: Vinegar, DriedHerbs, Tea, Soap and
+Houseplant descriptions, Baking description, Curing label, and one CHANGELOG line. The last round
+reported no French finding. `translation_fr` is `complete`; English and French display in game
+stays `unverified` until `playTests`.

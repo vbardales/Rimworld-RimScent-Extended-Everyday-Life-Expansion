@@ -23,7 +23,7 @@ remaining:
   - unverified: optional integration passes have not been written or run
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
-  - open: 7.g translation_fr unchecked; ChatGPT review applied 2026-11-03 (Vinegar, DriedHerbs, Tea, Soap, Houseplant descriptions; second round), FRENCH_REVIEW.md regenerated, Virginie review of the French pending
+  - open: 7.g translation_fr unchecked; ChatGPT review applied 2026-11-03 (Vinegar, DriedHerbs, Tea, Soap, Houseplant descriptions; Baking description, Curing label; three rounds), FRENCH_REVIEW.md regenerated, Virginie review of the French pending
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
 updated:            2026-11-03, audit replay at writeTests
 protocols_read_sha: 2e5ab7ac86307bf3c840414a7d487c6a48c60ec1

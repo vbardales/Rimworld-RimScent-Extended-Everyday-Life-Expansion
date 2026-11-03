@@ -1,0 +1,12 @@
+# Optional integrations pass: the hard dependencies plus every optional target of loadAfter.
+# INCOMPLETE: four Workshop IDs are not in any catalogue yet (asked of Virginie, 2026-11-03).
+reo.RimScent 3645569466
+nelim.rimscent.extended path:RimScentExtended/Mod
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+det.sbcuisine 3725224779
+soulfulpumpkin.tabletoptroveunofficial 3262297105
+sarg.alphacrafts 3382446150
+# vanillaexpanded.vbrewecandt (VBE Coffees and Teas): ID to add
+# vanillaexpanded.vcookebakery (VCE Bakery): ID to add
+# vaguelysexual.modpackageid.goeshere (Knick Knacks): ID to add
+# mlie.colonistsdeco (Colonists' Deco): ID to add

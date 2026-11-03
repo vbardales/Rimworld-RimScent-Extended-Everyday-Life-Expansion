@@ -36,11 +36,11 @@ XML parse and French coverage are covered by the shared `Check-ModBasics` and `C
 Two families, no pair of optional mods is declared incompatible, and no `incompatibleWith` entry
 exists, so no exclusive-combination or incompatibility pass applies.
 
-1. **Without optional mods:** `wsl-deps.sans-facultatifs.map`, `01-minimal-load.feature`. Proves
-   the mod loads alone and three core scent defs resolve.
+1. **Without optional mods:** `wsl-deps.sans-facultatifs.map`, `01-minimal-load.feature` and `03-base-patches.feature`. Proves
+   the mod loads alone, three core scent defs resolve and the base patches reach vanilla defs.
 2. **With optional mods:** `wsl-deps.avec-facultatifs.map` (to write once the Workshop IDs are
-   known), `02-optional-integrations.feature`: one `@requires:<packageId>` scenario per
+   known, four are missing), `02-optional-integrations.feature`: one `@requires:<packageId>` scenario per
    integration (VBE Coffees and Teas, VCE Bakery, Stoneborn Cuisine, Knick Knacks, Colonists' Deco,
    Tabletop Trove, Alpha Crafts), in one pass because the seven mods do not conflict. A scenario
-   skipped for a missing condition is not a pass. The patch effect on the target ThingDefs is not
-   asserted yet: it waits for a step (asked of NPT, 2026-11-03).
+   skipped for a missing condition is not a pass. Patch effects are asserted with the DefFieldSteps
+   step `has the extension ... with field` (NPT 47633e1, not pushed yet), staged by the map.

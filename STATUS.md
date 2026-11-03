@@ -21,7 +21,7 @@ remaining:
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game
-  - pending: tickets filed 2026-11-03 at tree bfef14c, English: 20261103-104446-858-a9d4 (01+03, sans-facultatifs), 20261103-104448-964-56e9 (02, avec-facultatifs); read summary.json and junit.xml at RUN_DONE; a red on the has-the-extension step goes to NPT
+  - pending: English tickets 2026-11-03: a9d4 (01+03 sans-facultatifs) GREEN 2/2; 56e9 (02 avec-facultatifs) RED 4/7, cause pass map lacked Harmony, VEF, Processor Framework, VBrewE, VCookE (defNames were right), map fixed; refiled the 3 red as 20261103-110447-230-222f, read summary.json and junit.xml at RUN_DONE
   - open: 8.h and 8.i need a French display scenario (none written), file after the English runs are green
   - open: 8.m code review after the runs
   - unverified: optional integration scenarios written 2026-11-03 (02 and 03 features), none run
@@ -30,7 +30,7 @@ remaining:
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
 updated:            2026-11-03, writeTests exit, playTests entry
-protocols_read_sha: 33e7ac18d79e34d9ea695791cd0d2623030d4e63
+protocols_read_sha: b51c6cdc44399e67ca7f768aa1b7ba2d9051baec
 ---
 
 # RimScent Extended: Everyday Life Expansion — status

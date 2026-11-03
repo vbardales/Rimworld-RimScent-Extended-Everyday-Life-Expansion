@@ -3,6 +3,7 @@ workflow_stage:     writeTests[1.0.0]
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
+remote:             https://github.com/vbardales/Rimworld-RimScent-Extended-Everyday-Life-Expansion.git
 visibility:         public
 detached:           yes
 licence:            open
@@ -21,9 +22,11 @@ remaining:
   - unverified: the minimal Pickle pass has not run in game
   - unverified: optional integration passes have not been written or run
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
-  - pending: Virginie French review (6.g) before leaving writeTests: translation_fr unchecked
+  - open: 7.b no written reason or named harness for the missing unit-test project (Tests/Check-Mod.ps1 is not described in TESTING.md)
+  - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
+  - open: 7.g translation_fr unchecked; FRENCH_REVIEW.md generated 2026-11-03, Virginie review pending
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
-updated:            2026-09-26, AUDIT.md revalidation and preTest entry
+updated:            2026-11-03, audit replay at writeTests
 protocols_read_sha: 2e5ab7ac86307bf3c840414a7d487c6a48c60ec1
 ---
 

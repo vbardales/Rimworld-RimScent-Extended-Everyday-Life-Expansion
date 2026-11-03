@@ -1,0 +1,44 @@
+{
+    "panel": {
+        "title": "RimScent Extended: Everyday Life Expansion",
+        "titleSize": 34,
+        "titleParts": [
+            {
+                "text": "RimScent"
+            },
+            {
+                "text": "Extended",
+                "font": "ui",
+                "scale": 0.56
+            },
+            {
+                "text": "Everyday Life",
+                "breakBefore": true
+            },
+            {
+                "text": "Expansion",
+                "breakBefore": true
+            }
+        ],
+        "tagInline": true,
+        "copyLines": [
+            "Coffee, bread, flowers and candles.",
+            "Daily life has an aroma."
+        ]
+    },
+	"backgroundFile": "Preview-source.png",
+	"echo": {
+		"file": "echo-concept.png",
+		"color": "var(--accent)"
+	},
+	"icon": {
+		"file": "ModIcon-source.png"
+	},
+	"palette": {
+		"veil": "#37281E",
+		"inkPrimary": "#F5EDE1",
+		"inkSecondary": "#D5AF7A",
+		"accent": "#D98050",
+		"badgeInk": "#17110D"
+	}
+}

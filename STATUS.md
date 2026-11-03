@@ -1,5 +1,5 @@
 ---
-stage:              preTest
+workflow_stage:     writeTests[1.0.0]
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -12,7 +12,7 @@ showcase:            complete
 settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
-translation_fr:      complete
+translation_fr: unchecked
 tested_on:
 workshop:
 remaining:
@@ -20,8 +20,11 @@ remaining:
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game
   - unverified: optional integration passes have not been written or run
-  - pending: no `Mod/About/PublishedFileId.txt` is present; prepublication cannot be claimed until the actual Workshop ID is recorded
+  - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
+  - pending: Virginie French review (6.g) before leaving writeTests: translation_fr unchecked
+  - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
 updated:            2026-09-26, AUDIT.md revalidation and preTest entry
+protocols_read_sha: 2e5ab7ac86307bf3c840414a7d487c6a48c60ec1
 ---
 
 # RimScent Extended: Everyday Life Expansion — status

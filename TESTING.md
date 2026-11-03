@@ -30,3 +30,17 @@ is the automated harness: it asserts exactly 15 scent `ThoughtDef`s, no shipped 
 source, and no settings or MainButtons implementation. Run it from the mod root:
 `powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Check-Mod.ps1` (one PASS line, exit 0).
 XML parse and French coverage are covered by the shared `Check-ModBasics` and `Check-Translations`.
+
+## Pickle passes declared (7.d, written 2026-11-03, none run)
+
+Two families, no pair of optional mods is declared incompatible, and no `incompatibleWith` entry
+exists, so no exclusive-combination or incompatibility pass applies.
+
+1. **Without optional mods:** `wsl-deps.sans-facultatifs.map`, `01-minimal-load.feature`. Proves
+   the mod loads alone and three core scent defs resolve.
+2. **With optional mods:** `wsl-deps.avec-facultatifs.map` (to write once the Workshop IDs are
+   known), `02-optional-integrations.feature`: one `@requires:<packageId>` scenario per
+   integration (VBE Coffees and Teas, VCE Bakery, Stoneborn Cuisine, Knick Knacks, Colonists' Deco,
+   Tabletop Trove, Alpha Crafts), in one pass because the seven mods do not conflict. A scenario
+   skipped for a missing condition is not a pass. The patch effect on the target ThingDefs is not
+   asserted yet: it waits for a step (asked of NPT, 2026-11-03).

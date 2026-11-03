@@ -1,5 +1,5 @@
 ---
-workflow_stage:     writeTests[1.0.0]
+workflow_stage:     playTests[1.0.0]
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -26,8 +26,8 @@ remaining:
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
-updated:            2026-11-03, French review validated by Virginie
-protocols_read_sha: 2e5ab7ac86307bf3c840414a7d487c6a48c60ec1
+updated:            2026-11-03, writeTests exit, playTests entry
+protocols_read_sha: 33e7ac18d79e34d9ea695791cd0d2623030d4e63
 ---
 
 # RimScent Extended: Everyday Life Expansion — status
@@ -130,3 +130,11 @@ after four ChatGPT review rounds, whose corrections were applied: Vinegar, Dried
 Houseplant descriptions, Baking description, Curing label, and one CHANGELOG line. The last round
 reported no French finding. `translation_fr` is `complete`; English and French display in game
 stays `unverified` until `playTests`.
+
+### writeTests exit, 2026-11-03
+
+Offline results are for `Mod/` as last changed in commit 3768e69 (repository HEAD c5d47aa when recorded):
+`Check-ModBasics` PASS (25 XML files, 15 defs), `Check-Translations` PASS (30 source texts),
+`Tests/Check-Mod.ps1` PASS (15 scent ThoughtDefs, no assembly, no settings implementation),
+`Check-Status` 0 errors. No unit-test project exists (declarative mod, see TESTING.md). Pickle suites
+01, 02 and 03 are written and not run; every result in game stays `unverified` until `playTests`.

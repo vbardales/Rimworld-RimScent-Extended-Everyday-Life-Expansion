@@ -38,8 +38,8 @@ exists, so no exclusive-combination or incompatibility pass applies.
 
 1. **Without optional mods:** `wsl-deps.sans-facultatifs.map`, `01-minimal-load.feature` and `03-base-patches.feature`. Proves
    the mod loads alone, three core scent defs resolve and the base patches reach vanilla defs.
-2. **With optional mods:** `wsl-deps.avec-facultatifs.map` (seven IDs, from the Audit register, 2026-11-03;
-   known), `02-optional-integrations.feature`: one `@requires:<packageId>` scenario per
+2. **With optional mods:** `wsl-deps.avec-facultatifs.map` (seven IDs, from the Audit register, 2026-11-03),
+   `02-optional-integrations.feature`: one `@requires:<packageId>` scenario per
    integration (VBE Coffees and Teas, VCE Bakery, Stoneborn Cuisine, Knick Knacks, Colonists' Deco,
    Tabletop Trove, Alpha Crafts), in one pass because the seven mods do not conflict. A scenario
    skipped for a missing condition is not a pass. Patch effects are asserted with the DefFieldSteps

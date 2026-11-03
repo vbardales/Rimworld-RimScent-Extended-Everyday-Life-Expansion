@@ -17,6 +17,7 @@ translation_fr:      complete
 tested_on:
 workshop:
 remaining:
+  - unverified: the "62 plants" count in About.xml is asserted nowhere; count in game or reword before publication
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game

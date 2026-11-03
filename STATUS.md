@@ -21,6 +21,9 @@ remaining:
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game
+  - pending: tickets filed 2026-11-03 at tree bfef14c, English: 20261103-104446-858-a9d4 (01+03, sans-facultatifs), 20261103-104448-964-56e9 (02, avec-facultatifs); read summary.json and junit.xml at RUN_DONE; a red on the has-the-extension step goes to NPT
+  - open: 8.h and 8.i need a French display scenario (none written), file after the English runs are green
+  - open: 8.m code review after the runs
   - unverified: optional integration scenarios written 2026-11-03 (02 and 03 features), none run
   - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists

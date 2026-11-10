@@ -1,0 +1,13 @@
+{
+  "templateStamp": "ed4669c0a5bf",
+  "workshopId": "3811307837",
+  "packageId": "nelim.rimscent.extended.everydaylife",
+  "releaseTitle": "RimScent Extended: Everyday Life Expansion {version}",
+  "requirePaths": [
+    "Defs",
+    "Patches"
+  ],
+  "forbidPaths": [],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery"
+}

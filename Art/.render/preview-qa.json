@@ -10,21 +10,21 @@
       "bounds": {
         "x": 48,
         "y": 30,
-        "width": 301.984375,
-        "height": 112.171875
+        "width": 319.75,
+        "height": 79.1875
       },
       "fonts": [
         {
           "familyName": "Segoe UI Semibold",
           "postScriptName": "SegoeUI-Semibold",
           "isCustomFont": false,
-          "glyphCount": 8
+          "glyphCount": 9
         },
         {
           "familyName": "RimWordFont",
           "postScriptName": "RimWordFont",
           "isCustomFont": true,
-          "glyphCount": 31
+          "glyphCount": 22
         }
       ]
     },
@@ -33,14 +33,26 @@
       "fonts": []
     },
     ".tag": {
-      "bounds": null,
-      "fonts": []
+      "bounds": {
+        "x": 48,
+        "y": 117.1875,
+        "width": 430,
+        "height": 26.390625
+      },
+      "fonts": [
+        {
+          "familyName": "Segoe UI",
+          "postScriptName": "SegoeUI",
+          "isCustomFont": false,
+          "glyphCount": 9
+        }
+      ]
     },
     "p": {
       "bounds": {
         "x": 48,
-        "y": 178.765625,
-        "width": 362.25,
+        "y": 180.171875,
+        "width": 430,
         "height": 60.875
       },
       "fonts": [
@@ -75,7 +87,7 @@
         "x": 0,
         "y": 0,
         "width": 519.671875,
-        "height": 260.640625
+        "height": 262.046875
       }
     },
     "copy": {
@@ -83,18 +95,18 @@
         "x": 48,
         "y": 30,
         "width": 430,
-        "height": 209.640625
+        "height": 211.046875
       }
     }
   },
   "iconBadgeAlpha": {
-    "width": 1254,
-    "height": 1254,
+    "width": 128,
+    "height": 128,
     "bounds": {
       "x": 0,
       "y": 0,
-      "width": 1254,
-      "height": 1254
+      "width": 128,
+      "height": 128
     }
   }
 }

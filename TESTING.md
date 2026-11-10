@@ -25,10 +25,10 @@ SHA, pass/language, `exitReason`, discovered/played counts, reviewed capture nam
 
 ## Offline contract check
 
-No unit-test project exists: this mod is declarative (no C#, no assembly). `Tests/Check-Mod.ps1`
-is the automated harness: it asserts exactly 15 scent `ThoughtDef`s, no shipped assembly or C#
-source, and no settings or MainButtons implementation. Run it from the mod root:
-`powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Check-Mod.ps1` (one PASS line, exit 0).
+No unit-test project exists: this mod is declarative (no C#, no assembly). `Tests/Rule-OwnValues.ps1`
+(run by the generated `Tests/Test-Mod.ps1` after the shared checks) asserts exactly 15 scent `ThoughtDef`s;
+no assembly and no settings or MainButtons implementation are asserted by the shared Check-SettingsContract. Run it from the mod root:
+`powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Test-Mod.ps1` (exit 0).
 XML parse and French coverage are covered by the shared `Check-ModBasics` and `Check-Translations`.
 
 ## Pickle passes declared (7.d, written 2026-11-03, none run)

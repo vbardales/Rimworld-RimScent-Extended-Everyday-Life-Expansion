@@ -19,9 +19,9 @@ translation_fr:      complete
 tested_on:
 workshop:
 remaining:
+  - note: 7.h done 2026-11-10: docs/runs/history.md lines for a9d4, 56e9, 222f; Inbox sorted (minimal-english and optional-english-2 to Evidence with RELEASE.md, optional-english deleted, cause drawn)
   - open: 7.a the "62 plants" figure in About.xml is verified nowhere (count it in game by Pickle step or reword); replay 2026-11-10
-  - open: 7.b Tests/Check-Mod.ps1 is not validated in LOCAL_SCRIPTS.md: convert to Tests/Rule-OwnValues.ps1 (AGENTS.md recipe) and tell Audit
-  - open: 7.h no docs/runs/ lines for tickets a9d4, 56e9, 222f; sort Tests/Pickle/Inbox (Prune-Evidence.ps1)
+  - pending: 7.b Tests/Rule-OwnValues.ps1 written, Check-Mod.ps1 deleted, LOCAL_SCRIPTS row e4ef6f8; waits for CI/CD to generate Tests/Test-Mod.ps1 and .github, then Audit validation
   - unverified: the "62 plants" count in About.xml is asserted nowhere; count in game or reword before publication
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration

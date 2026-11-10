@@ -21,7 +21,7 @@ workshop:
 remaining:
   - note: 7.h done 2026-11-10: docs/runs/history.md lines for a9d4, 56e9, 222f; Inbox sorted (minimal-english and optional-english-2 to Evidence with RELEASE.md, optional-english deleted, cause drawn)
   - open: 7.a the "62 plants" figure in About.xml is verified nowhere (count it in game by Pickle step or reword); replay 2026-11-10
-  - pending: 7.b Tests/Rule-OwnValues.ps1 written, Check-Mod.ps1 deleted, LOCAL_SCRIPTS row e4ef6f8; waits for CI/CD to generate Tests/Test-Mod.ps1 and .github, then Audit validation
+  - note: 7.b done 2026-11-10: Tests/Rule-OwnValues.ps1 (15 ThoughtDefs + Check-DefRefs with RimScentExtended scanned), generated Tests/Test-Mod.ps1 5/5, LOCAL_SCRIPTS row validated by Audit (787B15AC)
   - unverified: the "62 plants" count in About.xml is asserted nowhere; count in game or reword before publication
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration

@@ -29,8 +29,10 @@ remaining:
   - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
-updated:            2026-11-03, writeTests exit, playTests entry
-protocols_read_sha: 7a399cf65112553323dba0a1d0b85ae5b498ea62
+  - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
+  - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
+updated:            2026-11-10, resume, protocols read, Preview regenerated
+protocols_read_sha: 43ec7b3b86bbcac34e2876f4ce387daa9d91f5fc
 ---
 
 # RimScent Extended: Everyday Life Expansion — status

@@ -1,5 +1,5 @@
 ---
-workflow_stage:     playTests[1.0.0]
+workflow_stage:     writeTests[1.0.0]
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -8,6 +8,8 @@ visibility:         public
 detached:           yes
 licence:            open
 licence_at:         the same MIT base as RimScent Extended
+upstream_mod_remotes: N/A
+workshop_required_items: n/a, not released yet
 dependencies:       declared
 showcase:            complete
 settings_audit:      not_applicable
@@ -17,6 +19,9 @@ translation_fr:      complete
 tested_on:
 workshop:
 remaining:
+  - open: 7.a the "62 plants" figure in About.xml is verified nowhere (count it in game by Pickle step or reword); replay 2026-11-10
+  - open: 7.b Tests/Check-Mod.ps1 is not validated in LOCAL_SCRIPTS.md: convert to Tests/Rule-OwnValues.ps1 (AGENTS.md recipe) and tell Audit
+  - open: 7.h no docs/runs/ lines for tickets a9d4, 56e9, 222f; sort Tests/Pickle/Inbox (Prune-Evidence.ps1)
   - unverified: the "62 plants" count in About.xml is asserted nowhere; count in game or reword before publication
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
@@ -31,7 +36,7 @@ remaining:
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
   - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
-updated:            2026-11-10, resume, protocols read, Preview regenerated
+updated:            2026-11-10, audit replay: back to writeTests (7.a)
 protocols_read_sha: 43ec7b3b86bbcac34e2876f4ce387daa9d91f5fc
 ---
 

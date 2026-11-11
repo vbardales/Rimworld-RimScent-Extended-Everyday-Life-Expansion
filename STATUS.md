@@ -36,7 +36,7 @@ remaining:
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
   - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
 updated:            2026-11-11, 7.a closed (figure dropped), back to playTests
-protocols_read_sha: 3ee308b4e42532bfc2cab8671cb92b10d011c65a
+protocols_read_sha: 3937f9048f97c0e3cd28ab4c492ddef003895f23
 ---
 
 # RimScent Extended: Everyday Life Expansion — status

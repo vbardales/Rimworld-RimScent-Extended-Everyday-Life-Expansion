@@ -1,5 +1,5 @@
 ---
-workflow_stage:     writeTests[1.0.0]
+workflow_stage:     playTests[1.0.0]
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -20,9 +20,8 @@ tested_on:
 workshop:
 remaining:
   - note: 7.h done 2026-11-10: docs/runs/history.md lines for a9d4, 56e9, 222f; Inbox sorted (minimal-english and optional-english-2 to Evidence with RELEASE.md, optional-english deleted, cause drawn)
-  - open: 7.a the "62 plants" figure in About.xml is verified nowhere (count it in game by Pickle step or reword); replay 2026-11-10
+  - note: 7.a closed 2026-11-11: "62 plants" figure dropped from About.xml, README.md, Docs/TEST_SCENARIOS.md; unverifiable by design (plant defs live in other mods, "installed mods" is the player's set, CI has none), claim kept without number; Audit agreed
   - note: 7.b done 2026-11-10: Tests/Rule-OwnValues.ps1 (15 ThoughtDefs + Check-DefRefs with RimScentExtended scanned), generated Tests/Test-Mod.ps1 5/5, LOCAL_SCRIPTS row validated by Audit (787B15AC)
-  - unverified: the "62 plants" count in About.xml is asserted nowhere; count in game or reword before publication
   - unverified: no in-game run has verified loading, scent effects, or English/French display
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game
@@ -36,8 +35,8 @@ remaining:
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
   - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
-updated:            2026-11-10, audit replay: back to writeTests (7.a)
-protocols_read_sha: 43ec7b3b86bbcac34e2876f4ce387daa9d91f5fc
+updated:            2026-11-11, 7.a closed (figure dropped), back to playTests
+protocols_read_sha: 3ee308b4e42532bfc2cab8671cb92b10d011c65a
 ---
 
 # RimScent Extended: Everyday Life Expansion — status

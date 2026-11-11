@@ -56,8 +56,8 @@ observation:
 
 - An unpowered cooking station smells of nothing (RimScent engine, power check).
 - The nutrient paste dispenser's smell is the dispenser's own, not the cooking one.
-- Flowers: the claim "62 plants across the installed mods" is a count that depends on the installed
-  mods. It is not asserted anywhere; count it in game or reword the description before publication.
+- Flowers: the description states no plant count (it depended on the installed mods and was
+  unverifiable). Observe the one xpath on `purpose="Beauty"` on any decorative plant.
 - Stoneborn Cuisine: the grill, the portable pot, the quantum microgenerator and the tallow hearth
   smell of cooking. The patch names `SC_DwarvenOven`, `SC_PortablePot` and `SC_ArchotechMicrowave`
   only; the others rely on the generic `isMealSource` patch. Verify each in game.

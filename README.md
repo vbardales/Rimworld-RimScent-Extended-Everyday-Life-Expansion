@@ -13,8 +13,8 @@ appetising.
 ## Flowers, the same way
 
 Every decorative plant, vanilla or modded, through its **`purpose="Beauty"`** marker. A single
-xpath covers 62 plants across the installed mods, and will cover the next one you install
-without an update.
+xpath covers every decorative plant of the installed mods, and will cover the next one you
+install without an update.
 
 That is this mod's whole principle: **patch on a criterion the game already uses**, rather than
 enumerate. An enumerated list is wrong the day you add a mod; a criterion never is.

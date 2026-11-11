@@ -9,7 +9,7 @@ COOKING, WITHOUT NAMING A SINGLE STOVE
 Every cooking station in the game and in every mod smells of cooking, reached through the isMealSource marker the game already uses, not a hand-written list. An unpowered stove smells of nothing. The nutrient paste dispenser gets its own, considerably less appetising smell.
 
 FLOWERS, THE SAME WAY
-Every decorative plant, vanilla or modded, through its purpose="Beauty" marker. One xpath covers 62 plants across the installed mods, and will cover the next one you install without an update.
+Every decorative plant, vanilla or modded, through its purpose="Beauty" marker. One xpath covers every decorative plant of the installed mods, and will cover the next one you install without an update.
 
 VANILLA ITEMS
 Beer and wort: that is fermentation, like the barrel and the brewery. Hay, hops and herbal medicine: cut plants drying in the air. Scattered documents smell of paper, not of dirt.

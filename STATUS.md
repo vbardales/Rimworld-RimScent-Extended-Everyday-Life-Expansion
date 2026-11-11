@@ -134,6 +134,7 @@ all resulting runtime evidence remains to be reviewed.
 
 ### French review by Virginie, 2026-11-03 (CANCELLED 2026-11-11)
 **Cancelled 2026-11-11 (owner, via Audit):** the four ChatGPT rounds ran before the review-translation page-header fix and may have seen a truncated file. `translation_fr` is `pending_review`; rerun `/review-translation`, apply what is justified, then Virginie validates the new answer.
+**Rerun 2026-11-11 (fixed plugin, page 1 of 1):** 2 findings, 0 applied, 2 rejected. (1) PUBLICATION.md missing: not due before writeDocs. (2) tanned_hide.label "peau tannée" to "cuir tanné": rejected, a tanned hide is a peau; cuir is the finished material, and the description uses the same wording. Awaiting Virginie validation to set translation_fr complete.
 
 Reviewer: Virginie, 2026-11-03, at revision e21cc9f (before this record). She validated the French
 after four ChatGPT review rounds, whose corrections were applied: Vinegar, DriedHerbs, Tea, Soap and

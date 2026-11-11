@@ -31,7 +31,7 @@ remaining:
   - open: 8.m code review after the runs
   - note: optional integration scenarios (02 and 03 features) ran green in English 2026-11-03 (a9d4, 222f; 56e9 4 of 7 green + 222f 3 of 3)
   - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket
-  - pending: the mod is not yet published; create and commit `Mod/About/PublishedFileId.txt` only after the actual Workshop ID exists
+  - note: Workshop item 3811307837 exists (hidden, "RimScent Extended: Everyday Life Expansion", created 1 Oct, checked in Chrome by CI/CD 2026-11-11); PublishedFileId.txt committed 2026-11-11; the mod is not published yet (hidden item)
   - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text

@@ -38,6 +38,8 @@ exists, so no exclusive-combination or incompatibility pass applies.
 
 1. **Without optional mods:** `wsl-deps.sans-facultatifs.map`, `01-minimal-load.feature` and `03-base-patches.feature`. Proves
    the mod loads alone, three core scent defs resolve and the base patches reach vanilla defs.
+   Display (8.h/8.i): `04-display-english.feature` with `-Language English`, `05-display-french.feature` with
+   `-Language French`, same map; label and description of three base scents read through the NPT stage step.
 2. **With optional mods:** `wsl-deps.avec-facultatifs.map` (seven IDs, from the Audit register, 2026-11-03),
    `02-optional-integrations.feature`: one `@requires:<packageId>` scenario per
    integration (VBE Coffees and Teas, VCE Bakery, Stoneborn Cuisine, Knick Knacks, Colonists' Deco,

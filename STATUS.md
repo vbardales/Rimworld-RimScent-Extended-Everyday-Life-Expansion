@@ -26,7 +26,7 @@ remaining:
   - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
   - unverified: the minimal Pickle pass has not run in game
   - pending: English tickets 2026-11-03: a9d4 (01+03 sans-facultatifs) GREEN 2/2; 56e9 (02 avec-facultatifs) RED 4/7, cause pass map lacked Harmony, VEF, Processor Framework, VBrewE, VCookE (defNames were right), map fixed; refiled the 3 red as 20261103-110447-230-222f; 222f GREEN 3/3 (VCE Bakery, Stoneborn Cuisine, Alpha Crafts; summary.md, summary.json, junit.xml agree, exit 0), evidence Tests/Pickle/Inbox/optional-english-2; with 56e9 the 7 optional-pass scenarios are all green in English
-  - open: 8.h and 8.i need a French display scenario (none written), file after the English runs are green
+  - note: 8.h/8.i display scenarios written 2026-11-11: 04-display-english.feature and 05-display-french.feature (label and description of 3 base scents shown to Jet), run with wsl-deps.sans-facultatifs.map, -Language English then French; ticket not run yet
   - open: 8.m code review after the runs
   - note: optional integration scenarios (02 and 03 features) ran green in English 2026-11-03 (a9d4, 222f; 56e9 4 of 7 green + 222f 3 of 3)
   - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket

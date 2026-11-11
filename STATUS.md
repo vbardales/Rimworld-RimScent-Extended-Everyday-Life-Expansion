@@ -15,7 +15,7 @@ showcase:            complete
 settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
-translation_fr:      complete
+translation_fr:      pending_review
 tested_on:
 workshop:
 remaining:
@@ -132,7 +132,8 @@ contracts establish `preTest`. The test suite is not yet sufficient for `done`: 
 integration needs an explicitly scoped scenario/pass, the existing minimal pass must run, and
 all resulting runtime evidence remains to be reviewed.
 
-### French review by Virginie, 2026-11-03
+### French review by Virginie, 2026-11-03 (CANCELLED 2026-11-11)
+**Cancelled 2026-11-11 (owner, via Audit):** the four ChatGPT rounds ran before the review-translation page-header fix and may have seen a truncated file. `translation_fr` is `pending_review`; rerun `/review-translation`, apply what is justified, then Virginie validates the new answer.
 
 Reviewer: Virginie, 2026-11-03, at revision e21cc9f (before this record). She validated the French
 after four ChatGPT review rounds, whose corrections were applied: Vinegar, DriedHerbs, Tea, Soap and

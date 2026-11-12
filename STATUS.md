@@ -154,3 +154,5 @@ Offline results are for `Mod/` as last changed in commit 3768e69 (repository HEA
 01, 02 and 03 are written and not run; every result in game stays `unverified` until `playTests`.
 
 **Validation 2026-11-12:** Virginie validated the French on the frozen text (30 keys, revision 4ce5ce7) after two ChatGPT runs (page 1 of 1, 0 linguistic findings, 2 suggestions refused, see `Docs/review-refusals.md`). `translation_fr` is `complete`; in-game display of both languages is green (tickets faa0 and f0a4).
+
+**Re-validation 2026-11-12:** third ChatGPT run (page 1 of 1, 0 findings, header count 30 confirmed) validated again by Virginie. `translation_fr` stays `complete`.

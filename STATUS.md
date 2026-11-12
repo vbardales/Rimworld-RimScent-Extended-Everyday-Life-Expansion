@@ -15,7 +15,7 @@ showcase:            complete
 settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
-translation_fr:      complete
+translation_fr:      pending_review
 tested_on:
 workshop:
 remaining:
@@ -28,7 +28,8 @@ remaining:
   - pending: English tickets 2026-11-03: a9d4 (01+03 sans-facultatifs) GREEN 2/2; 56e9 (02 avec-facultatifs) RED 4/7, cause pass map lacked Harmony, VEF, Processor Framework, VBrewE, VCookE (defNames were right), map fixed; refiled the 3 red as 20261103-110447-230-222f; 222f GREEN 3/3 (VCE Bakery, Stoneborn Cuisine, Alpha Crafts; summary.md, summary.json, junit.xml agree, exit 0), evidence Tests/Pickle/Inbox/optional-english-2; with 56e9 the 7 optional-pass scenarios are all green in English
   - note: 8.h/8.i display scenarios written 2026-11-11: 04-display-english.feature and 05-display-french.feature (label and description of 3 base scents shown to Jet), run with wsl-deps.sans-facultatifs.map, -Language English then French; tickets filed on c41cb19, waiting for RUN_DONE: 20261111-195102-409-2d76 (English), 20261111-195105-667-b69f (French), evidence Tests/Pickle/Inbox/display-english and display-french; on result: read summary.json then junit.xml, sort evidence, record in docs/runs/history.md
   - note: display tickets 2026-11-11 came back not-mod-result: 2d76 English "Undefined step" (NPT step 47633e1 not on played sha, PiT asked), b69f French exit 8 cause: ticket filter was "04-display-french::show their French", feature is 05-display-french (the English filter form works); correct filter "05-display-french::show their French"; refile both on the PiT sha with correct filters
-  - pending: display tickets refiled 2026-11-11 on f4d0539 (NPT 96f7d3d, steps compiled not played): 20261111-235328-942-faa0 (English), 20261111-235338-717-f0a4 (French), evidence Tests/Pickle/Inbox/display-english and display-french; also still queued 31e7, 2f0e; on RUN_DONE read summary.json then junit.xml
+  - note: display tickets 8.h/8.i GREEN 2026-11-12 on f4d0539 (NPT 96f7d3d): faa0 English 1/1, f0a4 French 1/1 (summary.json, junit.xml agree, exitReason passed); evidence Tests/Pickle/Evidence/display-english and display-french; history.md line added; failed runs deleted
+  - pending: translation_fr back to pending_review 2026-11-12 (AUDIT 6.g: /review-translation mandatory before Virginie's French review); order: review, all corrections, regenerate TRANSLATION_REVIEW.md once, commit, pages 1..N on frozen text; refusals in Docs/review-refusals.md
   - open: 8.m code review after the runs
   - note: optional integration scenarios (02 and 03 features) ran green in English 2026-11-03 (a9d4, 222f; 56e9 4 of 7 green + 222f 3 of 3)
   - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket
@@ -37,8 +38,8 @@ remaining:
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
   - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
-updated:            2026-11-11, 7.a closed (figure dropped), back to playTests
-protocols_read_sha: 3937f9048f97c0e3cd28ab4c492ddef003895f23
+updated:            2026-11-12, display runs green, translation_fr pending_review
+protocols_read_sha: 9481d090854f082b638e84ad647a202fec7de6d2
 ---
 
 # RimScent Extended: Everyday Life Expansion — status

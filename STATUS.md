@@ -16,6 +16,7 @@ settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
 translation_fr:      pending_review
+french_review_pending: true
 tested_on:
 workshop:
 remaining:

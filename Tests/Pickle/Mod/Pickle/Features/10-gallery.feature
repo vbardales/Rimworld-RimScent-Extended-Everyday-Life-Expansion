@@ -36,7 +36,7 @@
 #   Says: the day ends with old books and the same candle, Nelim about to blow it out. Cardigan over the tunic, smile, book in hand.
 #   Gesture by: read job on a book (reading pose), paused. Decor: stack of books (PlayerHandbook, DECOBedsideBook) on the side table, AC_ScentedCandle, floor lamp, a potted houseplant on the side table, Filth_ScatteredDocuments, DECODeerhead as background prop only. Scent: OldPaper. OneCards and BoardGameBoxes dropped.
 #
-# Possible later scene 8 (asked to NPT, not in the plan): the Needs tab of Nelim open with the Cooking thought hovered; needs an NPT step that opens the Needs tab.
+# OPTIONAL scene 8 gal-8-mood-tab (not in the 7 until played once; PiT 2026-11-12: steps exist): hearth-hall, 12 Clear, Nelim selected, steps `I open the "Needs" inspect tab` (InspectTabs) then `I hover over the tooltip containing "<Cooking thought text>"` (HoverSteps, fails and lists the screen regions if none or several match), optional `the tooltip containing "<text>" is drawn`. Says: a colonist feels the cooking smell as a mood thought. Plan score 4.5 (j weak: tooltip text hardly readable at 268 px; c weak: no plant in frame); not ticketed unless the hover works and j is solved. Hover on a mood row not yet played combined.
 # Scents with no source shot: Essence, Perfume, Vinegar, NutrientPaste, Fermenting, AirFreshener, FloweryScent, Coffee, Taxidermy.
 # Subtitles: one English line per scene in PUBLICATION.md, "Gallery subtitles" (written after the captures are accepted).
 

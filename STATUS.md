@@ -201,4 +201,4 @@ Header and full lines: `Tests/Pickle/Mod/Pickle/Features/10-gallery.feature` (dr
 | 6 | gal-6-dusk-bread | dining-nook | 18 | Baking (VCE Bakery) | medium |
 | 7 | gal-7-night-books | sofa-corner | 21 | OldPaper | medium |
 
-Plan score (score-gallery, no capture yet): 5 on each of the 7 scenes, mean 5, series k ok (one story, wide 3, tight 2, opening 1, closing 7). Mechanical on paper. Not verified: that the curing rack shows hides, that the lit oven shows fuel, that a paused bill gesture can be caught, the andon defName, the exact `I frame` step. Scene 8 (Needs tab) asked to NPT.
+Plan score (score-gallery, no capture yet): 5 on each of the 7 scenes, mean 5, series k ok (one story, wide 3, tight 2, opening 1, closing 7). Mechanical on paper. Not verified: that the curing rack shows hides, that the lit oven shows fuel, that a paused bill gesture can be caught, the andon defName, the exact `I frame` step. Scene 8 (Needs tab): PiT answered 2026-11-12, steps exist (open "Needs" inspect tab, hover tooltip), not combined on a mood row yet; kept optional at plan score 4.5 (j and c weak), not ticketed unless the hover works.

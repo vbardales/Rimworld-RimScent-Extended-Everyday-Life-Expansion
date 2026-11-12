@@ -82,10 +82,11 @@ VanillaExpanded.VAPPE 1814987817
 akairo.LetsHaveaCat 3682940618
 # --- Nelim's skin gene (GES_Skin_Almond), as in wsl-deps.sanctuary-nelim.map
 LazyFridayStudio.GenesExpandedSkin 3214172563
-# --- wardrobe: [LTS] Raiments (LTS_Tunika, scenes 2 to 7), Ponpeco Pajamas (Apparel_PonpecoPajamaB, scene 1), Ponpeco Kids' Clothes (the cardigan of scene 7, a kids' garment: to confirm), Lisa's Work Apparel (Jiro's overalls)
+# --- wardrobe: [LTS] Raiments (LTS_Tunika, scenes 2 to 7), Ponpeco Pajamas (Apparel_PonpecoPajamaB, scene 1), FashionRIMsta below (Apparel_FSFurCoat, the coat of scene 7), Lisa's Work Apparel (Jiro's overalls)
+# Ponpeco Kids' Clothes (3237739433) dropped 2026-11-12: its kids' cardigan is no longer used.
+# Ideology DLC (KneelPillow, RusticRug_Medium, PlantPot_Bonsai, Plant_TreeBonsai) is read from the game install, not from this map.
 limetreesnake.raiments 3751997843
 ponpeco.PonpecoPajamas 3482959515
-ponpeco.KidsClothes 3237739433
 Hysteria82.MousekinWorkApparel 3709891968
 Mlie.FashionRIMsta 3592569869
 # --- Jiro (scene 3): Seren race and its extension (ids from wsl-deps.sanctuary-jiro.map)

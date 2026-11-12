@@ -15,7 +15,7 @@ showcase:            complete
 settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
-translation_fr:      pending_review
+translation_fr:      complete
 tested_on:
 workshop:
 remaining:
@@ -29,7 +29,7 @@ remaining:
   - note: 8.h/8.i display scenarios written 2026-11-11: 04-display-english.feature and 05-display-french.feature (label and description of 3 base scents shown to Jet), run with wsl-deps.sans-facultatifs.map, -Language English then French; tickets filed on c41cb19, waiting for RUN_DONE: 20261111-195102-409-2d76 (English), 20261111-195105-667-b69f (French), evidence Tests/Pickle/Inbox/display-english and display-french; on result: read summary.json then junit.xml, sort evidence, record in docs/runs/history.md
   - note: display tickets 2026-11-11 came back not-mod-result: 2d76 English "Undefined step" (NPT step 47633e1 not on played sha, PiT asked), b69f French exit 8 cause: ticket filter was "04-display-french::show their French", feature is 05-display-french (the English filter form works); correct filter "05-display-french::show their French"; refile both on the PiT sha with correct filters
   - note: display tickets 8.h/8.i GREEN 2026-11-12 on f4d0539 (NPT 96f7d3d): faa0 English 1/1, f0a4 French 1/1 (summary.json, junit.xml agree, exitReason passed); evidence Tests/Pickle/Evidence/display-english and display-french; history.md line added; failed runs deleted
-  - pending: translation_fr back to pending_review 2026-11-12 (AUDIT 6.g: /review-translation mandatory before Virginie's French review); order: review, all corrections, regenerate TRANSLATION_REVIEW.md once, commit, pages 1..N on frozen text; refusals in Docs/review-refusals.md
+  - note: translation_fr complete 2026-11-12: /review-translation (page 1 of 1, two runs, 0 corrections, 2 suggestions refused in Docs/review-refusals.md), then Virginie validated at revision 4ce5ce7
   - open: 8.m code review after the runs
   - note: optional integration scenarios (02 and 03 features) ran green in English 2026-11-03 (a9d4, 222f; 56e9 4 of 7 green + 222f 3 of 3)
   - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket
@@ -38,7 +38,7 @@ remaining:
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
   - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
-updated:            2026-11-12, display runs green, translation_fr pending_review
+updated:            2026-11-12, French validated by Virginie, display runs green
 protocols_read_sha: 9481d090854f082b638e84ad647a202fec7de6d2
 ---
 
@@ -152,3 +152,5 @@ Offline results are for `Mod/` as last changed in commit 3768e69 (repository HEA
 `Tests/Check-Mod.ps1` PASS (15 scent ThoughtDefs, no assembly, no settings implementation),
 `Check-Status` 0 errors. No unit-test project exists (declarative mod, see TESTING.md). Pickle suites
 01, 02 and 03 are written and not run; every result in game stays `unverified` until `playTests`.
+
+**Validation 2026-11-12:** Virginie validated the French on the frozen text (30 keys, revision 4ce5ce7) after two ChatGPT runs (page 1 of 1, 0 linguistic findings, 2 suggestions refused, see `Docs/review-refusals.md`). `translation_fr` is `complete`; in-game display of both languages is green (tickets faa0 and f0a4).

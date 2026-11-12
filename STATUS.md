@@ -212,3 +212,5 @@ Update 2026-11-12 (scenarios with real defNames, agent read the mod Defs): 4 com
 Gallery tickets filed 2026-11-12 on 489f714 (map wsl-deps.gallery.map, runner auto): 20261112-185430-212-7486 (scenes 1, 2, 5; evidence Tests/Pickle/Inbox/gallery-a), 20261112-185431-455-05a3 (scenes 6, 7; gallery-b), 20261112-185432-662-9619 (scene 3 alone; gallery-c). Scene 4 held back. On RUN_DONE read summary.json then junit.xml, open every capture, score-gallery.
 
 Ticket 7486 died exit 137 (no report, infra low RAM per TM); refiled once on auto 2026-11-12 (label "gallery 1,2,5 refile after 137"). 05a3 and 9619 still pending.
+
+Ticket 9619 (scene 3 alone) died exit 137, no report (infra low RAM per TM); partial folder deleted; not refiled until 9001 (refile of 7486) answers, TM to look at the lane and RAM with Cloud if 9001 also dies.

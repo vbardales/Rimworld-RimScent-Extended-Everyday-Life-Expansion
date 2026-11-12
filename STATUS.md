@@ -157,3 +157,48 @@ Offline results are for `Mod/` as last changed in commit 3768e69 (repository HEA
 **Validation 2026-11-12:** Virginie validated the French on the frozen text (30 keys, revision 4ce5ce7) after two ChatGPT runs (page 1 of 1, 0 linguistic findings, 2 suggestions refused, see `Docs/review-refusals.md`). `translation_fr` is `complete`; in-game display of both languages is green (tickets faa0 and f0a4).
 
 **Re-validation 2026-11-12:** third ChatGPT run (page 1 of 1, 0 findings, header count 30 confirmed) validated again by Virginie. `translation_fr` stays `complete`.
+
+## NSB
+
+Sync 2026-11-12 (first). NSB changed since 2026-11-05 only by validations (all places validated 11-08 and 11-09, final save `Nelims-tribe-decor-mods-z3.rws`, `docs` renamed `Docs` 11-12); NPT added steps (thought label and description of a stage, held item, plants fully grown, decor that burns). Rules said back: everything in NSB is free; a colonist or domestic animal outside NSB needs Virginie's express validation; colonist properties change only with it; every outfit is free; every animal the mod adds must be shown. Left alone: the mod adds no animal.
+
+Places read: 2026-11-12 Tribe read: 2026-11-12 Steps read: 2026-11-12 (read by a sub-agent from the docs, not played)
+
+| place | shots | changes for the gallery | last read |
+|---|---|---|---|
+| sleeping-nook | 1 | candle lit, light dimmed, potted plant | 2026-11-12 |
+| preindustrial-workshop | 2 | soap stacks, bucket, washbasin, shelf | 2026-11-12 |
+| hearth-hall | 3 | DwarvenOven lit, crate, bowls | 2026-11-12 |
+| workshops | 4 | curing rack with hides | 2026-11-12 |
+| tea-room | 5 | kettle, green tea cups | 2026-11-12 |
+| dining-nook | 6 | bakery oven lit, bread stacks | 2026-11-12 |
+| sofa-corner | 7 | books, candle, lamp | 2026-11-12 |
+
+| colonist | shots | outfit per shot | last read | exceptions |
+|---|---|---|---|---|
+| Nelim | 1 to 7 | 1 Apparel_PonpecoPajamaB (just up), 2 to 6 LTS_Tunika emerald (daily outfit, continuity), 7 cardigan over the tunic (cool night, plan says so) | 2026-11-12 (NELIM-PROFIL, VALIDE) | mouth smirk overridden to smile (allowed by GALLERY.md) |
+| Jiro Arata | 3 | Logisticien des reserves outfit (validated) | 2026-11-12 (VALIDE) | none |
+
+| animal | shots | outfit | last read | exceptions |
+|---|---|---|---|---|
+| none | - | - | - | the mod adds no animal |
+
+Included animals (rule 5): none, nothing to show.
+
+Optional mods: the NSB save carries only Tabletop Decorations of the 7; the rest come through the DepMap (`Tests/Pickle/wsl-deps.avec-facultatifs.map` entries on top of the decor map). Not verified: exact step name to frame a place (docs say `I frame the sanctuary "<place>"`), the andon defName, bill steps for soap and bread.
+
+## Shotlist
+
+Header and full lines: `Tests/Pickle/Mod/Pickle/Features/10-gallery.feature` (draft 3). Story: Nelim's Sunday of small smells, candle at dawn and again at night. Opus director's pass done once; kept: one scent per image, tight soap shot, candle echo in 7, no smile claim on negative scents, vinegar and taxidermy not subjects, scene 8 dropped; not kept: coffee scene (the espresso machine does not fit the tatami room).
+
+| # | name | place | hour | scent | width |
+|---|---|---|---|---|---|
+| 1 | gal-1-dawn-candle | sleeping-nook | 06 | ScentedCandle | medium |
+| 2 | gal-2-soap | preindustrial-workshop | 08 | Soap | tight |
+| 3 | gal-3-noon-stew | hearth-hall | 12 | Cooking | wide |
+| 4 | gal-4-curing | workshops | 14 | Curing | medium |
+| 5 | gal-5-tea | tea-room | 16 | Tea (VBE) | medium |
+| 6 | gal-6-dusk-bread | dining-nook | 18 | Baking (VCE Bakery) | medium |
+| 7 | gal-7-night-books | sofa-corner | 21 | OldPaper | medium |
+
+Plan score (score-gallery, no capture yet): 5 on each of the 7 scenes, mean 5, series k ok (one story, wide 3, tight 2, opening 1, closing 7). Mechanical on paper. Not verified: that the curing rack shows hides, that the lit oven shows fuel, that a paused bill gesture can be caught, the andon defName, the exact `I frame` step. Scene 8 (Needs tab) asked to NPT.

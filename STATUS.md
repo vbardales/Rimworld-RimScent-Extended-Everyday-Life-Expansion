@@ -185,7 +185,7 @@ Places read: 2026-11-12 Tribe read: 2026-11-12 Steps read: 2026-11-12 (read by a
 
 Included animals (rule 5): none, nothing to show.
 
-Optional mods: the NSB save carries only Tabletop Decorations of the 7; the rest come through the DepMap (`Tests/Pickle/wsl-deps.avec-facultatifs.map` entries on top of the decor map). Not verified: exact step name to frame a place (docs say `I frame the sanctuary "<place>"`), the andon defName, bill steps for soap and bread.
+Optional mods: the NSB save carries only Tabletop Decorations of the 7; the rest come through the DepMap (`Tests/Pickle/wsl-deps.avec-facultatifs.map` entries on top of the decor map). Frame step confirmed by PiT 2026-11-12: `Given Nelim's Sanctuary: I am at the sanctuary "<place>"` or `When ... I frame the sanctuary "<place>"`, then `the camera root size is set to N`. Save to settle before the first ticket: PiT says `Nelims-tribe` with `wsl-deps.sanctuary.map`, NSB docs say the decorated `Nelims-tribe-decor-mods-z3.rws` with `wsl-deps.sanctuary-decor-mods.map`. Not verified, the andon defName, bill steps for soap and bread.
 
 ## Shotlist
 

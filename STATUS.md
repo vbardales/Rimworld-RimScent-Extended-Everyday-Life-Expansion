@@ -1,5 +1,5 @@
 ---
-workflow_stage:     playTests[1.0.0]
+workflow_stage:     shootGallery[1.0.0]
 mod:                RimScent Extended: Everyday Life Expansion
 packageId:          nelim.rimscent.extended.everydaylife
 repo:               Rimworld-RimScent-Extended-Everyday-Life-Expansion
@@ -16,36 +16,31 @@ settings_audit:      not_applicable
 localization:        complete
 translation_en:      complete
 translation_fr:      complete
-tested_on:
+tested_on:           2026-11-12 pickle f4d0539 (display 2/2; base and optional passes 2026-11-03 on 3768e69, Mod/ Defs and Patches unchanged since)
 workshop:
 remaining:
   - note: 7.h done 2026-11-10: docs/runs/history.md lines for a9d4, 56e9, 222f; Inbox sorted (minimal-english and optional-english-2 to Evidence with RELEASE.md, optional-english deleted, cause drawn)
   - note: 7.a closed 2026-11-11: "62 plants" figure dropped from About.xml, README.md, Docs/TEST_SCENARIOS.md; unverifiable by design (plant defs live in other mods, "installed mods" is the player's set, CI has none), claim kept without number; Audit agreed
   - note: 7.b done 2026-11-10: Tests/Rule-OwnValues.ps1 (15 ThoughtDefs + Check-DefRefs with RimScentExtended scanned), generated Tests/Test-Mod.ps1 5/5, LOCAL_SCRIPTS row validated by Audit (787B15AC)
-  - unverified: no in-game run has verified loading, scent effects, or English/French display
-  - unverified: patch operations have not been exercised against RimScent, RimScent Extended, or any optional integration
-  - unverified: the minimal Pickle pass has not run in game
   - pending: English tickets 2026-11-03: a9d4 (01+03 sans-facultatifs) GREEN 2/2; 56e9 (02 avec-facultatifs) RED 4/7, cause pass map lacked Harmony, VEF, Processor Framework, VBrewE, VCookE (defNames were right), map fixed; refiled the 3 red as 20261103-110447-230-222f; 222f GREEN 3/3 (VCE Bakery, Stoneborn Cuisine, Alpha Crafts; summary.md, summary.json, junit.xml agree, exit 0), evidence Tests/Pickle/Inbox/optional-english-2; with 56e9 the 7 optional-pass scenarios are all green in English
   - note: 8.h/8.i display scenarios written 2026-11-11: 04-display-english.feature and 05-display-french.feature (label and description of 3 base scents shown to Jet), run with wsl-deps.sans-facultatifs.map, -Language English then French; tickets filed on c41cb19, waiting for RUN_DONE: 20261111-195102-409-2d76 (English), 20261111-195105-667-b69f (French), evidence Tests/Pickle/Inbox/display-english and display-french; on result: read summary.json then junit.xml, sort evidence, record in docs/runs/history.md
   - note: display tickets 2026-11-11 came back not-mod-result: 2d76 English "Undefined step" (NPT step 47633e1 not on played sha, PiT asked), b69f French exit 8 cause: ticket filter was "04-display-french::show their French", feature is 05-display-french (the English filter form works); correct filter "05-display-french::show their French"; refile both on the PiT sha with correct filters
   - note: display tickets 8.h/8.i GREEN 2026-11-12 on f4d0539 (NPT 96f7d3d): faa0 English 1/1, f0a4 French 1/1 (summary.json, junit.xml agree, exitReason passed); evidence Tests/Pickle/Evidence/display-english and display-french; history.md line added; failed runs deleted
   - note: translation_fr complete 2026-11-12: /review-translation (page 1 of 1, two runs, 0 corrections, 2 suggestions refused in Docs/review-refusals.md), then Virginie validated at revision 4ce5ce7
   - note: 8.m code review done 2026-11-12 (Opus sub-agent, all of Mod/, Check-PatchGuards PASS 48 ops): 0 defect that prints a red error; no Mod/ edit made so the green runs stay valid
-  - open: low, StonebornCuisine/Patches/StonebornCuisine.xml:38,49 add not(modExtensions ModExtension_Scent) filter as in Kitchen.xml (possible double extension)
+  - open: low (8.m), StonebornCuisine/Patches/StonebornCuisine.xml:38,49 add not(modExtensions ModExtension_Scent) filter as in Kitchen.xml (possible double extension)
   - open: low, Patches/Kitchen.xml:27,39 add not(@Abstract="True") filter
   - open: low, Patches/Flowers.xml:30,43 plant inheriting purpose Beauty from abstract parent gets no scent (coverage gap, accept or document)
   - open: low, Items.xml, Filth_Documents.xml and per-mod patches: no already-has-extension filter (safe today)
   - open: info comments to fix: StonebornCuisine Defs:4-12 and Patches:31 ("quatre postes"), Scents_Kitchen.xml:13 (VCE uses Baking), About.xml:52-53 loadAfter reason; About.xml:39-43 add steamWorkshopUrl for RimScent Extended once on Workshop; Household:64 and Kitchen:16,29 optional ParentName
   - note: optional integration scenarios (02 and 03 features) ran green in English 2026-11-03 (a9d4, 222f; 56e9 4 of 7 green + 222f 3 of 3)
-  - open: 7.d new Pickle step has-the-extension is NPT commit 47633e1, not pushed; first real play is this mod ticket
   - note: Workshop item 3811307837 exists (hidden, "RimScent Extended: Everyday Life Expansion", created 1 Oct, checked in Chrome by CI/CD 2026-11-11); PublishedFileId.txt committed 2026-11-11; the mod is not published yet (hidden item)
-  - open: 7.d optional integration Pickle scenarios and their @requires maps are not written
   - note: Preview.png re-rendered 2026-11-03 (echo size and position checked, no clipping, no overlap with title)
   - note: Preview.png re-rendered 2026-11-10 (commit e8b4c7f, new config schema); echo clear of title text
   - open: convert Tests/Check-Mod.ps1 to Tests/Rule-OwnValues.ps1 (AGENTS.md mission 2026-11-05, recipe step 1-6; needs CI/CD regenerate)
-updated:            2026-11-12, French validated by Virginie, display runs green
+updated:            2026-11-12, playTests closed (8.a to 8.m), to shootGallery
 code_review_sha:    2a1d648d3cb5688d4e00cf39ba26449890b4a3f9
-protocols_read_sha: 9481d090854f082b638e84ad647a202fec7de6d2
+protocols_read_sha: ba6b78893666b82100fbbc3d3769fbd913f735bf
 ---
 
 # RimScent Extended: Everyday Life Expansion — status
